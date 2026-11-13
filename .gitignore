@@ -1,0 +1,20 @@
+# 这个仓库只放说明与截图，安装包走 Releases，不进仓库。
+*.exe
+*.apk
+*.aab
+*.msi
+*.dmg
+*.zip
+*.7z
+*.blockmap
+*.nsis.7z
+release/
+dist/
+dist-apk/
+win-unpacked/
+node_modules/
+
+# misc
+.DS_Store
+Thumbs.db
+*.log
