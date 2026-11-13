@@ -16,9 +16,9 @@
 
 | 文件 | 平台 | 说明 |
 |---|---|---|
-| `yuyu-console-1.1.5-x64-setup.exe` | Windows x64 | 安装版，可选安装目录，自动建快捷方式，卸载保留登录状态 |
-| `yuyu-console-1.1.5-x64-portable.exe` | Windows x64 | 免安装单文件，双击即用，可放 U 盘 |
-| `yuyu-api-1.1.5.apk` | Android | 原生 APK，Android 8.0 以上；含 arm64-v8a / armeabi-v7a / x86_64 |
+| `yuyu-console-1.1.6-x64-setup.exe` | Windows x64 | 122.9 MB · 安装版，可选安装目录，自动建快捷方式，卸载保留登录状态 |
+| `yuyu-console-1.1.6-x64-portable.exe` | Windows x64 | 111.5 MB · 免安装单文件，双击即用，可放 U 盘 |
+| `yuyu-api-1.1.6.apk` | Android | 76.6 MB · 原生 APK，Android 8.0 以上；含 arm64-v8a / armeabi-v7a / x86_64 |
 
 安装提示：
 
@@ -33,7 +33,7 @@
 |---|---|---|
 | 技术 | Expo SDK 58 · React Native 0.88 | Electron 45 · React 19 · Vite 7 |
 | 形态 | 原生 App，底部标签 | 无边框窗口，侧栏导航，托盘常驻 |
-| 当前版本 | 1.1.5 | 1.1.5 |
+| 当前版本 | 1.1.6 | 1.1.6 |
 
 两端共有的能力：
 
@@ -43,6 +43,8 @@
 - **质检结果**：服务端每次跑完的模型输出，可直接看到渲染后的 HTML 动画
 - **扫码充值**：下单后出二维码，微信/支付宝扫码即可，轮询自动到账
 - **订阅与榜单**：额度进度、用尽预估、邀请返利、全站排行
+- **更新提醒**：启动即比对 GitHub Releases 的最新版本，有新版本才提示，可关闭；关闭只对本次运行有效，下次进来照常提醒。设置 / 关于页另有手动检查
+- **公告**：启动只弹未读公告，弹窗可关闭或「不再提示」；读过的不再打扰
 
 桌面端多做的部分：常驻托盘（关窗口不退出，只有托盘菜单的「退出」才真正结束进程）、
 无边框可拖拽标题栏（登录前也有关闭按钮）、可翻页的数据表格、弹窗详情、
@@ -82,16 +84,17 @@
 
 ```bash
 # Windows
-certutil -hashfile yuyu-console-1.1.5-x64-setup.exe SHA256
+certutil -hashfile yuyu-console-1.1.6-x64-setup.exe SHA256
 
 # macOS / Linux
-sha256sum yuyu-api-1.1.5.apk
+sha256sum yuyu-api-1.1.6.apk
 ```
 
 ## 版本历史
 
 | 版本 | 要点 |
 |---|---|
+| [1.1.6](docs/releases/v1.1.6.md) | 启动即检测更新（关闭只对本次有效）、公告只弹未读；桌面端曲线补日期轴与带日期的峰值、请求日志修正密钥与 Token 列、通道角标统一数据源；安卓端折线可点选单日、检查更新改为按钮、启动闪屏改纯色 |
 | 1.1.5 | 首个正式版：Android 与 Windows 双端同时发布 |
 
 ## 关于本仓库
