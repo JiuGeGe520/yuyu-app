@@ -62,6 +62,10 @@
 |---|---|---|
 | ![通道](docs/shots/desktop/05-channels.png) | ![充值](docs/shots/desktop/06-recharge.png) | ![订阅](docs/shots/desktop/07-subscriptions.png) |
 
+| 设置 | 公告弹窗 | 公告入口 |
+|---|---|---|
+| ![设置](docs/shots/desktop/08-settings.png) | ![公告弹窗](docs/shots/desktop/09-notice-dialog.png) | ![公告入口](docs/shots/desktop/10-notice-entry.png) |
+
 ### Android
 
 | 登录 | 概览 | 用量 |
@@ -72,9 +76,9 @@
 |---|---|---|
 | ![密钥](docs/shots/04-keys.png) | ![我的](docs/shots/05-profile.png) | ![通道](docs/shots/06-channels.png) |
 
-| 质检结果（HTML 直接渲染） |
-|---|
-| ![质检](docs/shots/07-quality-preview.png) |
+| 质检结果（HTML 直接渲染） | 公告弹窗 |
+|---|---|
+| ![质检](docs/shots/07-quality-preview.png) | ![公告](docs/shots/08-notice.png) |
 
 > 截图使用演示账号（`demo@example.com`）与本地 fixture 接口，不含任何真实账号数据。
 
